@@ -1,14 +1,12 @@
 # Agent Communication System
 
 ## エージェント構成
-- **PRESIDENT** (別セッション): 統括責任者
-- **boss1** (multiagent:agents): チームリーダー
-- **worker1,2,3** (multiagent:agents): 実行担当
+- **reviewer** (multiagent:agents): レビュアー
+- **implementer** (multiagent:agents): 実装者
 
 ## あなたの役割
-- **PRESIDENT**: @instructions/president.md
-- **boss1**: @instructions/boss.md
-- **worker1,2,3**: @instructions/worker.md
+- **implementer**: @instructions/implementer.md
+- **reviewer**: @instructions/reviewer.md
 
 ## メッセージ送信
 ```bash
@@ -16,4 +14,4 @@
 ```
 
 ## 基本フロー
-PRESIDENT → boss1 → workers → boss1 → PRESIDENT 
+implementer → reviewer → implementer → reviewer → ... → 完成
